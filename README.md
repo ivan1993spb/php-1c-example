@@ -1,5 +1,7 @@
 
-# Пример взаимодействия сайта с 1С через SoapClient
+# Пример взаимодействия сайта с 1С через SoapClient 
+
+[![Build Status](https://travis-ci.org/ivan1993spb/php-1c-example.svg?branch=master)](https://travis-ci.org/ivan1993spb/php-1c-example)
 
 PHP, 1С, SOAP, SoapClient, Обмен.
 
