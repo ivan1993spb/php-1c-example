@@ -104,7 +104,9 @@ class Client1C implements Client1CInterface
     public function addOrder(RequestAddOrder $request)
     {
         try {
-            return $this->soapClient->__soapCall(self::METHOD_ADD_ORDER, [$request])->return->attachTimeNow()->attachRequest($request);
+            /** @var \Example\Client1C\ResponseTypes\ResponseAddOrder $response */
+            $response = $this->soapClient->__soapCall(self::METHOD_ADD_ORDER, [$request])->return;
+            return $response->attachTimeNow()->attachRequest($request);
         } catch (SoapFault $e) {
             throw new MethodInvocationException(self::METHOD_ADD_ORDER, 0, $e);
         }
@@ -120,7 +122,9 @@ class Client1C implements Client1CInterface
     public function addGoodToOrder(RequestAddGoodToOrder $request)
     {
         try {
-            return $this->soapClient->__soapCall(self::METHOD_ADD_GOOD_TO_ORDER, [$request])->return->attachTimeNow()->attachRequest($request);
+            /** @var \Example\Client1C\ResponseTypes\ResponseAddGoodToOrder $response */
+            $response = $this->soapClient->__soapCall(self::METHOD_ADD_GOOD_TO_ORDER, [$request])->return;
+            return $response->attachTimeNow()->attachRequest($request);
         } catch (SoapFault $e) {
             throw new MethodInvocationException(self::METHOD_ADD_GOOD_TO_ORDER, 0, $e);
         }
@@ -136,7 +140,9 @@ class Client1C implements Client1CInterface
     public function addGoodsToOrder(RequestAddGoodsToOrder $request)
     {
         try {
-            return $this->soapClient->__soapCall(self::METHOD_ADD_GOODS_TO_ORDER, [$request])->return->attachTimeNow()->attachRequest($request);
+            /** @var \Example\Client1C\ResponseTypes\ResponseAddGoodsToOrder $response */
+            $response = $this->soapClient->__soapCall(self::METHOD_ADD_GOODS_TO_ORDER, [$request])->return;
+            return $response->attachTimeNow()->attachRequest($request);
         } catch (SoapFault $e) {
             throw new MethodInvocationException(self::METHOD_ADD_GOODS_TO_ORDER, 0, $e);
         }
@@ -152,7 +158,9 @@ class Client1C implements Client1CInterface
     public function confirmOrder(RequestConfirmOrder $request)
     {
         try {
-            return $this->soapClient->__soapCall(self::METHOD_CONFIRM_ORDER, [$request])->return->attachTimeNow()->attachRequest($request);
+            /** @var \Example\Client1C\ResponseTypes\ResponseConfirmOrder $response */
+            $response = $this->soapClient->__soapCall(self::METHOD_CONFIRM_ORDER, [$request])->return;
+            return $response->attachTimeNow()->attachRequest($request);
         } catch (SoapFault $e) {
             throw new MethodInvocationException(self::METHOD_CONFIRM_ORDER, 0, $e);
         }
@@ -168,7 +176,9 @@ class Client1C implements Client1CInterface
     public function resetOrder(RequestResetOrder $request)
     {
         try {
-            return $this->soapClient->__soapCall(self::METHOD_RESET_ORDER, [$request])->return->attachTimeNow()->attachRequest($request);
+            /** @var \Example\Client1C\ResponseTypes\ResponseResetOrder $response */
+            $response = $this->soapClient->__soapCall(self::METHOD_RESET_ORDER, [$request])->return;
+            return $response->attachTimeNow()->attachRequest($request);
         } catch (SoapFault $e) {
             throw new MethodInvocationException(self::METHOD_RESET_ORDER, 0, $e);
         }
