@@ -1,0 +1,5 @@
+vendor
+.idea
+*.swp
+
+phpunit_client_1c_config.php

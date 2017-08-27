@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/5.6/phpunit.xsd"
+        bootstrap="vendor/autoload.php"
+        timeoutForLargeTests="3600"
+        verbose="true">
+    <testsuites>
+        <testsuite name="Test 1C client">
+            <file>tests/Client1CTest.php</file>
+            <file>tests/Client1CWrapperTest.php</file>
+            <file>tests/DumbClient1CTest.php</file>
+            <file>tests/FailureClient1CTest.php</file>
+            <file>tests/RequestValidationTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
