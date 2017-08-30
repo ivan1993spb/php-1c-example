@@ -82,14 +82,14 @@ class Client1C implements Client1CInterface
             'features'           => SOAP_SINGLE_ELEMENT_ARRAYS,
             'keep_alive'         => false,
             'classmap'           => [
-                'AddGoodToOrderResponse'            => ResponseAddGoodToOrder::class,
-                'AddGoodsToOrderResponse'           => ResponseAddGoodsToOrder::class,
-                'AddOrderResponse'                  => ResponseAddOrder::class,
-                'ConfirmOrderResponse'              => ResponseConfirmOrder::class,
-                'ResetOrderResponse'                => ResponseResetOrder::class,
-                'AddGoodsToOrderResponseRowGoods'   => GoodState::class,
-                'AddGoodToOrderResponseRow'         => OrderItem::class,
-                'AddGoodsToOrderResponseRowOrder'   => OrderItem::class,
+                'AddGoodToOrderResponse'          => ResponseAddGoodToOrder::class,
+                'AddGoodsToOrderResponse'         => ResponseAddGoodsToOrder::class,
+                'AddOrderResponse'                => ResponseAddOrder::class,
+                'ConfirmOrderResponse'            => ResponseConfirmOrder::class,
+                'ResetOrderResponse'              => ResponseResetOrder::class,
+                'AddGoodsToOrderResponseRowGoods' => GoodState::class,
+                'AddGoodToOrderResponseRow'       => OrderItem::class,
+                'AddGoodsToOrderResponseRowOrder' => OrderItem::class,
             ],
         ]);
     }
