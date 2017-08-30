@@ -1,5 +1,6 @@
 {
     "name": "ivan1993spb/php-1c-example",
+    "description": "An example for sending request to 1С from PHP",
     "type": "library",
     "autoload": {
         "psr-4": {
